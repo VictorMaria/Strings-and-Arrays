@@ -1,6 +1,6 @@
 # Strings-and-Arrays
 
-#### Recreating a C or C++ experience by pretending some JavaScript string and array methods don't exist and writing them from scratch with minimal or no dependency on inbuilt methods.
+#### Recreating a C experience by pretending some JavaScript string and array methods don't exist and writing them from scratch with minimal or no dependency on inbuilt methods.
 
 ## How to use the code
 Clone the repository ```git clone https://github.com/VictorMaria/Strings-and-Arrays.git```

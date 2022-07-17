@@ -6,6 +6,8 @@ export default class Stringy {
     }
 
     isPrefix(prefix: string, isCaseSensitive: boolean = false) {
+        if (prefix.length > this.text.length) return false;
+
         let matches: string = '';
         const refinedPrefix = isCaseSensitive ? prefix: prefix.toLowerCase();
         const refinedText = isCaseSensitive ? this.text : this.text.toLowerCase();
@@ -22,6 +24,8 @@ export default class Stringy {
     }
 
     isSuffix(suffix: string, isCaseSensitive: boolean = false) {
+        if (suffix.length > this.text.length) return false;
+
         let matches = '';
         const refinedSuffix = isCaseSensitive ? suffix : suffix.toLowerCase();
         const refinedText = isCaseSensitive ? this.text : this.text.toLowerCase();
@@ -38,4 +42,4 @@ export default class Stringy {
 
         return matches.length === refinedSuffix.length;
     }
-}
+};
