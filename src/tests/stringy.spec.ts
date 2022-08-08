@@ -118,4 +118,55 @@ describe('Stringy methods', () => {
       expect(result).to.equal(true);
     });
   });
+
+  describe('isPalindrome', () => {
+    const emptyString = new Stringy('');
+    const peak = new Stringy('peak');
+    const cashewNougat = new Stringy('cashew nougat');
+    const tenet = new Stringy('tenet');
+    const kayAK = new Stringy('kayAK');
+    const stepOnNoPets = new Stringy('Step on no pets');
+    const nursesRun = new Stringy('nurses run');
+    const yoBananaBoy = new Stringy('Yo, Banana Boy! ');
+
+    it('This should return false for an empty string', () => {
+      const result = emptyString.isPalindrome();
+      expect(result).to.equal(false);
+    })
+
+    it('This should return false for peak', () => {
+      const result = peak.isPalindrome();
+      expect(result).to.equal(false);
+    });
+
+    it(`This should return false for 'cashew nougat'`, () => {
+      const result = cashewNougat.isPalindrome();
+      expect(result).to.equal(false);
+    });
+
+    it('This should return true for tenet', () => {
+      const result = tenet.isPalindrome();
+      expect(result).to.equal(true);
+    });
+
+    it('This should return true for kayAK regardless of the case', () => {
+      const result = kayAK.isPalindrome();
+      expect(result).to.equal(true);
+    });
+
+    it(`This should return true for a phrase such as 'Step on no pets'`, () => {
+      const result = stepOnNoPets.isPalindrome();
+      expect(result).to.equal(true);
+    });
+
+    it(`This should return true for a phrase such as 'nurses run'`, () => {
+      const result = nursesRun.isPalindrome();
+      expect(result).to.equal(true);
+    });
+
+    it(`This should return true for a phrase such as 'Yo, Banana Boy! `, () => {
+      const result = yoBananaBoy.isPalindrome();
+      expect(result).to.equal(true);
+    });
+  });
 });

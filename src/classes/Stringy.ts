@@ -42,4 +42,19 @@ export default class Stringy {
 
         return matches.length === refinedSuffix.length;
     }
-};
+
+    isPalindrome() {
+        if (this.text.length < 1) return false;
+        let refinedText = this.text.toLowerCase();
+        refinedText = refinedText.replace(/[`~!@#$%^&*()_+=:";'{}|.,?]+/g, '');
+        refinedText = refinedText.replace(/\s/g, '');
+
+        for (let index = 0; index < (refinedText.length / 2); index++) {
+            if (refinedText[index] !== refinedText[refinedText.length - (index + 1)]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
