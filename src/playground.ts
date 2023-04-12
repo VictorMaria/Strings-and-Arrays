@@ -1,4 +1,4 @@
-import Stringy from './classes/Stringy';
+import Stringy from './topics/Stringy';
 
 //const cashew = new Stringy('cashew');
 //console.log(cashew.isSuffix('cashew'));

@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import Stringy from '../classes/Stringy';
+import Stringy from '../topics/Stringy';
 
 describe('Stringy methods', () => {
   describe('isPrefix', () => {

@@ -1,7 +1,7 @@
 {
   "name": "strings-and-arrays",
   "version": "1.0.0",
-  "description": "#### Recreating a C or Go experience by pretending some JavaScript string and array methods don't exist and writing them from scratch with minimal or no dependency on inbuilt methods.",
+  "description": "#### Recreating some JavaScript string and array methods like they don't exist and writing them from scratch with minimal or no dependency on inbuilt methods.",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
